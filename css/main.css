@@ -1,0 +1,127 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Noto Serif', serif;
+	color: #1a1a1a;
+	margin: 0;
+	height: 100%;
+	background-color: #e6ecf0;
+	position: relative;
+}
+
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+.overley {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(63,63,63,0.33);
+}
+
+.twit{
+	display: flex;
+	flex-direction: column;
+	width: 590px;
+	height: 205px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	padding: 6px;
+	border-radius: 8px;
+}
+
+.twit h1 {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: #fff;
+	margin: 0;
+	padding: 12px 0;
+	border-bottom: 1px solid #a4d9f9;
+	border-radius: 8px 8px 0 0;
+}
+
+.wrap-message{
+	background-color: #e8f5fe;
+	padding: 12px;
+	padding-bottom: auto;
+	border-radius: 0 0 8px 8px;
+}
+
+textarea {
+	width: 100%;
+	max-height: 80px;
+	font-size: 14px;
+	padding: 12px;
+	resize: none;
+	border-radius: 8px;
+	border: 2px solid #a4d9f9;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(63,63,63,0.6);
+}
+::-moz-placeholder {
+  color: rgba(63,63,63,0.6);
+}
+:-ms-input-placeholder {
+  color: rgba(63,63,63,0.6);
+}
+:-moz-placeholder {
+  color: rgba(63,63,63,0.6);
+}
+
+.nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 0 0;
+}
+
+.count{
+	flex: 0 0 50px;
+	font-size: 17px;
+	color: rgba(63,63,63,0.6);
+	width: 50px;
+	height: 50px;
+	line-height: 46px;
+	text-align: center;
+	cursor: default;
+	border-radius: 50%;
+	border: 2px solid rgba(74,179,244,0.5);
+}
+
+.bottom{
+	height: 40px;
+	flex: 0 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	padding: 0 20px; 
+	border-radius: 20px;
+	border: 0;
+	background-color: rgba(74,179,244,0.5);
+	cursor: pointer;
+}
+
+.bottom:hover,
+.bottom:active{
+	background-color: rgba(74,179,244,1);
+}
